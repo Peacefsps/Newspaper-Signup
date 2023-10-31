@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body {
+    background-color: hsl(234, 29%, 20%);
+    position: relative;
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content:space-between;
+    border-radius: 18px;
+    margin-top: 20px;
+    padding: 40px 0 20px 40px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+}
+.container-text {
+    padding-top: 16px;
+    padding-right: 24px;
+    width: 100%;
+}
+.container-text > h1 {
+    margin-bottom: 12px;
+    color: hsl(235, 18%, 26%);
+    font-weight: 700;
+    font-size: 38px;
+}
+.container-text > p {
+    margin-bottom: 28px;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(235, 18%, 26%);
+}
+ul {
+    list-style-type: none;
+}
+.svg-list > li {
+    padding-bottom: 14px;
+    color: hsl(234, 29%, 20%);
+}
+.svg-list svg {
+    margin-right: 12px;
+}
+.form {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.form label {
+    color:hsl(234, 29%, 20%);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.form input[type=email], button {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+.submitmail {
+    margin-top: 12px;
+}
+button {
+    cursor: pointer;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+.sucess-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 24px;
+    margin-top: 60px;
+    left: 30%;
+    right: 30%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px 38px;
+}
+.sucess-container > h1 {
+    color:hsl(234, 29%, 20%);
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 24px;
+}
+.sucess-container > p {
+    color: hsl(235, 18%, 26%);
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.sucess-container a {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+.sucess-container > button {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+    /* margin-bottom: 4px; */
+}
+.fa-circle-exclamation {
+    margin-left: 2px;
+    font-size: 14px;
+}
+#user-input {
+    color:hsl(234, 29%, 20%);
+    font-weight: bold;
+}
