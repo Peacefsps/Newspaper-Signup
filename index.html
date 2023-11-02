@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="https://kit.fontawesome.com/cfb876fed3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,10 +20,12 @@
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>And much more!</li>
             </ul>
             <form class="form" novalidate>
-                <label for="email">Email address</label>
+                <div>
+                    <label for="email">Email address</label>
+                    <span id="format-error" style="display: none" class="error">Valid email required<i class="fa-solid fa-circle-exclamation"></i></span>
+                    <span id="field-error" style="display: none" class="error">Field cannot be blank<i class="fa-solid fa-circle-exclamation"></i></span>
+                </div>
                 <input type="email" id="mail" placeholder="email@company.com">
-                <span id="format-error" style="display: none" class="error">Kindly fill in correct email format<i class="fa-solid fa-circle-exclamation"></i></span>
-                <span id="field-error" style="display: none" class="error">Field cannot be blank<i class="fa-solid fa-circle-exclamation"></i></span>
                 <button class="submitmail">Subscribe to monthly newsletter</button>
             </form>
         </div>
@@ -32,6 +35,7 @@
     </div>
     <div class="sucess-container">
         <div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><g fill="none"><circle cx="32" cy="32" r="32" fill="#FF6155"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
         </div>
         <h1>Thanks for subscribing!</h1>

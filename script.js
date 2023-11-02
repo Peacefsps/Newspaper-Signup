@@ -11,33 +11,38 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 form.addEventListener('submit', function(e) {
     e.preventDefault()
-    const userEntry = userEmail.value
-    if (userEntry === "") {
+    if (!userEmail.validity.valid) {
+        showError();
+    }
+    else if (userEmail.value === "") {
         fieldError.style.display = "block"
         formatError.style.display = "none"
-        return false;
     }
-    // else if (!emailPattern.test(userEmail)) {
-    //     formatError.style.display = "block";
-    //     fieldError.style.display = "none"
-    //     return false;
-    // }
     else {
-        containerAll.style.display = "none"
-        sucessContainer.style.display = "flex"
-        userInput.innerHTML = userEntry;
-        formatError.style.display = "none";
         fieldError.style.display = "none"
+        formatError.style.display = "none"
+        sucessContainer.style.display = "flex"
+        containerAll.style.display = "none"
+        userInput.innerHTML = userEmail.value;
     }
-    userEntry = '';
-    userEmail.focus();
 })
+
 userEmail.addEventListener('input', function() {
-    if (userEmail.validity.typeMismatch) {
+    if (userEmail.validity.valid) {
+        fieldError.style.display = "none";
+        formatError.style.display = "none";
+    }
+    else {
+        showError();
+    }
+})
+
+function showError() {
+    if (!emailPattern.test(userEmail)) {
         formatError.style.display = "block";
         fieldError.style.display = "none"
     }
-})
+}
 
 dismissMail.addEventListener('click', function() {
     containerAll.style.display = "flex"
@@ -47,19 +52,3 @@ dismissMail.addEventListener('click', function() {
     formatError.style.display = "none"
     userEmail.focus();
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6

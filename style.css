@@ -58,13 +58,29 @@ ul {
     font-weight: 700;
     margin-bottom: 12px;
 }
+.form > div {
+    display: flex;
+    justify-content: space-between;
+}
 .form input[type=email], button {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid grey;
 }
+input[type=email]:focus {
+    border: 1px solid hsl(231, 7%, 60%);
+    outline: unset;
+}
 .submitmail {
     margin-top: 12px;
+    transition: .6s;
+}
+.submitmail:hover {
+    background-color: hsl(4, 100%, 67%);
+    background-image: linear-gradient(to right, #FF527B, #FF6A3A);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    /* transition: ease-in .5s; */
+    /* add box shadow to this button */
 }
 button {
     cursor: pointer;
@@ -72,6 +88,7 @@ button {
     color: white;
     font-weight: 700;
     font-size: 16px;
+    border: none;
 }
 .sucess-container {
     display: none;
@@ -84,6 +101,10 @@ button {
     background-color: hsl(0, 0%, 100%);
     padding: 30px 38px;
 }
+/* .sucess-container svg {
+    background-image: linear-gradient(to right, #FF527B, #FF6A3A);
+    border-radius: 50%;
+} */
 .sucess-container > h1 {
     color:hsl(234, 29%, 20%);
     font-size: 40px;
@@ -104,6 +125,11 @@ button {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid grey;
+    border: none;
+}
+.dismissmail:hover {
+    background-image: linear-gradient(to right, #FF527B, #FF6A3A);
+    /* add box shadow to this button */
 }
 .error {
     color: red;
