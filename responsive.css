@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@media screen and (width: 1024px) {
+    .container {
+        left: 10%;
+        right: 10%;
+    }
+}
+@media screen and (width: 768px) {
+    body {
+        position: unset;
+        background-color: unset;
+    }
+    .container {
+        position: unset;
+        padding: 30px 20px 0 20px;
+        justify-content: space-evenly;
+    }
+    .svg-list > li {
+        font-size: 14px;
+    }
+}
+@media screen and (width: 425px) {
+    body {
+        background-color: unset;
+        position: unset
+    }
+    .container-text:before {
+        content: url(Assets/images/illustration-sign-up-mobile.svg)
+    }
+    .container {
+        position: unset;
+        flex-direction: column;
+        padding: 0;
+        border-radius: unset;
+        justify-content: unset;
+        margin-top: 0;
+    }
+    .main-img {
+        display: none;
+    }
+    .container-text {
+        margin-top: 20px;
+        padding: 14px;
+    }
+}
+@media screen and (max-width: 375px) {
+    body {
+        background-color: unset;
+        position: unset
+    }
+    .container-text:before {
+        content: url(Assets/images/illustration-sign-up-mobile.svg)
+    }
+    .container {
+        position: unset;
+        flex-direction: column;
+        padding: 0;
+        border-radius: unset;
+        justify-content: unset;
+        margin-top: 0;
+    }
+    .main-img {
+        display: none;
+    }
+    .container-text {
+        margin-top: 20px;
+        padding: 14px;
+    }
+}
+@media screen and (width: 320px) {
+    .hidden-img > svg {
+        width: 320px;
+    }
+}

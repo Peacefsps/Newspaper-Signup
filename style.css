@@ -9,6 +9,9 @@ body {
     background-color: hsl(234, 29%, 20%);
     position: relative;
 }
+.hidden-img {
+    display: none;
+}
 .container {
     background-color: hsl(0, 0%, 100%);
     display: flex;
@@ -78,7 +81,7 @@ input[type=email]:focus {
 .submitmail:hover {
     background-color: hsl(4, 100%, 67%);
     background-image: linear-gradient(to right, #FF527B, #FF6A3A);
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    box-shadow: 0 0 11px #FF527B;
     /* transition: ease-in .5s; */
     /* add box shadow to this button */
 }
@@ -101,10 +104,6 @@ button {
     background-color: hsl(0, 0%, 100%);
     padding: 30px 38px;
 }
-/* .sucess-container svg {
-    background-image: linear-gradient(to right, #FF527B, #FF6A3A);
-    border-radius: 50%;
-} */
 .sucess-container > h1 {
     color:hsl(234, 29%, 20%);
     font-size: 40px;
@@ -128,15 +127,15 @@ button {
     border: none;
 }
 .dismissmail:hover {
+    background-color: hsl(4, 100%, 67%);
     background-image: linear-gradient(to right, #FF527B, #FF6A3A);
+    box-shadow: 0 0 11px #FF527B;
     /* add box shadow to this button */
 }
 .error {
     color: red;
     font-size: 12px;
     font-weight: 700;
-    margin-top: 4px;
-    /* margin-bottom: 4px; */
 }
 .fa-circle-exclamation {
     margin-left: 2px;
