@@ -22,13 +22,11 @@
 @media screen and (width: 425px) {
     body {
         background-color: unset;
-        position: unset
     }
-    .container-text:before {
-        content: url(Assets/images/illustration-sign-up-mobile.svg)
+    #mobile-svg {
+        display: block;
     }
     .container {
-        position: unset;
         flex-direction: column;
         padding: 0;
         border-radius: unset;
@@ -41,15 +39,29 @@
     .container-text {
         margin-top: 20px;
         padding: 14px;
+    }
+    .container-text > h1 {
+        font-size: 30px;
+    }
+    .svg-list > li {
+        font-size: 14px;
+    }
+    .sucess-container {
+        background-color: unset;
+        padding: 12px;
+    }
+    .sucess-container > h1 {
+        font-size: 30px;
+        margin-bottom: 12px;
+        margin-top: 12px;
     }
 }
 @media screen and (max-width: 375px) {
     body {
         background-color: unset;
-        position: unset
     }
-    .container-text:before {
-        content: url(Assets/images/illustration-sign-up-mobile.svg)
+    #mobile-svg {
+        display: block;
     }
     .container {
         position: unset;
@@ -63,12 +75,18 @@
         display: none;
     }
     .container-text {
-        margin-top: 20px;
-        padding: 14px;
+        margin-top: 12px;
+        padding: 12px;
+    }
+    .container-text > h1 {
+        font-size: 30px;
+    }
+    .svg-list > li {
+        font-size: 14px;
     }
 }
 @media screen and (width: 320px) {
-    .hidden-img > svg {
+    #mobile-svg {
         width: 320px;
     }
 }
