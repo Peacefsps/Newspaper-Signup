@@ -55,6 +55,15 @@
         margin-bottom: 12px;
         margin-top: 12px;
     }
+    button {
+        font-size: 14px;
+    }
+    .sucess-container > button {
+        padding: 10px;
+    }
+    #user-input {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 375px) {
     body {
@@ -82,6 +91,27 @@
         font-size: 30px;
     }
     .svg-list > li {
+        font-size: 14px;
+    }
+    .sucess-container {
+        background-color: unset;
+        padding: 6px;
+    }
+    .sucess-container > h1 {
+        font-size: 22px;
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+    .sucess-container > p {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+    }
+    .sucess-container > button {
+        padding: 10px;
+    }
+    #user-input {
         font-size: 14px;
     }
 }
