@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@media screen and (width: 1024px) {
-    .container {
-        left: 10%;
-        right: 10%;
-    }
-}
 @media screen and (width: 768px) {
     body {
-        position: unset;
         background-color: unset;
     }
     .container {
-        position: unset;
         padding: 30px 20px 0 20px;
         justify-content: space-evenly;
     }
